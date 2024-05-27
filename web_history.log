@@ -1,0 +1,20 @@
+IMAGE          CREATED         CREATED BY                                      SIZE      COMMENT
+32140ca464eb   39 hours ago    CMD ["nginx" "-g" "daemon off;"]                0B        buildkit.dockerfile.v0
+<missing>      39 hours ago    EXPOSE map[80/tcp:{}]                           0B        buildkit.dockerfile.v0
+<missing>      39 hours ago    COPY /app/build /usr/share/nginx/html # buil…   5.95MB    buildkit.dockerfile.v0
+<missing>      40 hours ago    COPY nginx.conf /etc/nginx/conf.d/default.co…   20.5kB    buildkit.dockerfile.v0
+<missing>      19 months ago   /bin/sh -c #(nop)  CMD ["nginx" "-g" "daemon…   0B        
+<missing>      19 months ago   /bin/sh -c #(nop)  STOPSIGNAL SIGQUIT           0B        
+<missing>      19 months ago   /bin/sh -c #(nop)  EXPOSE 80                    0B        
+<missing>      19 months ago   /bin/sh -c #(nop)  ENTRYPOINT ["/docker-entr…   0B        
+<missing>      19 months ago   /bin/sh -c #(nop) COPY file:09a214a3e07c919a…   16.4kB    
+<missing>      19 months ago   /bin/sh -c #(nop) COPY file:0fd5fca330dcd6a7…   12.3kB    
+<missing>      19 months ago   /bin/sh -c #(nop) COPY file:0b866ff3fc1ef5b0…   12.3kB    
+<missing>      19 months ago   /bin/sh -c #(nop) COPY file:65504f71f5855ca0…   8.19kB    
+<missing>      19 months ago   /bin/sh -c set -x     && addgroup -g 101 -S …   21.3MB    
+<missing>      19 months ago   /bin/sh -c #(nop)  ENV PKG_RELEASE=1            0B        
+<missing>      19 months ago   /bin/sh -c #(nop)  ENV NJS_VERSION=0.7.6        0B        
+<missing>      19 months ago   /bin/sh -c #(nop)  ENV NGINX_VERSION=1.22.0     0B        
+<missing>      19 months ago   /bin/sh -c #(nop)  LABEL maintainer=NGINX Do…   0B        
+<missing>      21 months ago   /bin/sh -c #(nop)  CMD ["/bin/sh"]              0B        
+<missing>      21 months ago   /bin/sh -c #(nop) ADD file:2a949686d9886ac7c…   6.2MB     
