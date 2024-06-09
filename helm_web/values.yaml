@@ -9,3 +9,6 @@ configmap:
 image:
   name: hantmei/vdt_web
   tag: latest
+
+service:
+  nodePort: 31000

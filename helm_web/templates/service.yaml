@@ -6,10 +6,9 @@ metadata:
     app: {{ .Values.appName }}
 spec:
   ports:
-  - protocol: TCP
-    port: 8080
+  - port: 8080
     targetPort: 80
-    nodePort: 31000
+    nodePort: {{ .Values.service.nodePort }}
   selector:
     app: {{ .Values.appName }}
     tier: frontend
