@@ -1,0 +1,9 @@
+appName: myhelmapp
+
+port: 80
+
+replicas:
+
+image:
+  name: hantmei/vdt_midterm-nginx_server
+  tag: latest
