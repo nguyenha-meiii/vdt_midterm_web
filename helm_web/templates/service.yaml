@@ -5,11 +5,11 @@ metadata:
   labels:
     app: {{ .Values.appName }}
 spec:
+  type: NodePort
   ports:
-  - port: 8080
-    targetPort: 80
+  - port: 80
+    targetPort: 3000
     nodePort: {{ .Values.service.nodePort }}
   selector:
     app: {{ .Values.appName }}
     tier: frontend
-  type: NodePort

@@ -11,4 +11,4 @@ image:
   tag: latest
 
 service:
-  nodePort: 31000
+  nodePort: 30000
