@@ -2,7 +2,6 @@ appName: web
 
 port: 80
 
-replicas:
 
 image:
   name: hantmei/vdt_midterm-nginx_server
