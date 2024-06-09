@@ -9,7 +9,7 @@ spec:
   ports:
   - port: 80
     targetPort: 3000
-    nodePort: {{ .Values.service.nodePort }}
+    nodePort: 31000
   selector:
     app: {{ .Values.appName }}
     tier: frontend
