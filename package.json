@@ -13,6 +13,7 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.6.8",
     "bootstrap": "^5.3.3",
+    "fix-has-install-script": "^1.0.2",
     "formik": "^2.4.6",
     "react": "^18.3.1",
     "react-bootstrap": "^2.10.2",

@@ -8,6 +8,6 @@ configmap:
     CUSTOM_HEADER: 'This app was deployed with helm!'
 
 image:
-  name: devopsjourney1/mywebapp
+  name: hantmei/fe
   tag: latest
 
