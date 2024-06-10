@@ -1,6 +1,6 @@
 appName: web
 
-port: 80
+# port: 80
 
 configmap:
   name: web-configmap-v1
