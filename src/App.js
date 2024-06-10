@@ -20,14 +20,13 @@ const App = () => {
     const fetchStudents = async () => {
       try {
         const response = await axios.get('/api/students');
-        setStudents(response.data);
+        setStudents(response.json);
       } catch (error) {
         console.error('Error fetching students:', error);
       }
     };
     fetchStudents();
   }, []);
-
   const handleDelete = async (id) => {
     try {
       const response = await axios.delete(`/api/students/${id}`);
