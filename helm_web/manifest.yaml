@@ -1,6 +1,6 @@
 project: default
 source:
- repoURL: 'https://github.com/nguyenha-meiii/vdt_midterm_web.git'
+ repoURL: 'https://github.com/nguyenha-meiii/vdt_midterm_web'
  path: helm_web
  targetRevision: HEAD
  helm:
