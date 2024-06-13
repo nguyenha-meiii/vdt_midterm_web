@@ -1,14 +1,23 @@
-project: default
-source:
- repoURL: 'https://github.com/nguyenha-meiii/vdt_midterm_web'
- path: helm_web
- targetRevision: HEAD
- helm:
-   valueFiles:
-     - values.yaml
-destination:
- server: 'https://kubernetes.default.svc'
- namespace: web
-syncPolicy:
- syncOptions:
-   - CreateNamespace=true
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: ha-helm-web-multisource
+  namespace: argocd
+spec:
+  project: default
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: vdt-api
+  source:
+    repoURL: https://github.com/nguyenha-meiii/vdt_midterm_web
+    path: helm_web
+    targetRevision: HEAD
+    helm:
+      valueFiles:
+        - https://raw.githubusercontent.com/nguyenha-meiii/web_config/HEAD/values.yaml
